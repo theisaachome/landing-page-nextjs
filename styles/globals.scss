@@ -5,10 +5,15 @@ body {
   font-family: $font-body;
   padding: 0;
   margin: 0;
+  line-height: 1.3;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+*,
+a {
+  color: #fff;
+}
 a {
   color: #fff;
   text-decoration: none;
@@ -18,6 +23,25 @@ a {
   box-sizing: border-box;
 }
 
+ul,li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 section{
   background-color: $mainBg;
+}
+button{
+  border: none;
+  background:linear-gradient(to right, $ctaCyan,$ctaBlue);
+  padding: 20px 40px;
+  font-size: .65em;
+  width: 100%;
+  max-width: 285px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+  &:hover{
+      background:linear-gradient(to right, $ctaBlue,$ctaBlue);
+  }
 }

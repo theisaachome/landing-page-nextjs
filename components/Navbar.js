@@ -7,13 +7,13 @@ const Navbar = () => {
       <header className={styles.header}>
         <div className={styles.header__logo}>
           <Link href="/" passHref>
-            <Image src="/images/logo.svg" alt="logo" width={185} height={54} />
+            <Image src="/images/logo.svg" alt="logo" width={160} height={50} />
           </Link>
         </div>
         <div className={styles.header__items}>
-          <Link href="/features">Features</Link>
-          <Link href="/team">Team</Link>
-          <Link href="signin">Sign In</Link>
+          <Link className={styles.header__item} href="/features">Features</Link>
+          <Link className={styles.header__item} href="/team">Team</Link>
+          <Link className={styles.header__item} href="signin">Sign In</Link>
         </div>
       </header>
     </>
