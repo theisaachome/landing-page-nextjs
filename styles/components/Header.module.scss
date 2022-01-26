@@ -1,0 +1,23 @@
+@import "../variables";
+@import  "../mixin";
+
+.header{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $introBg;
+    padding: 1.25rem;
+    &__logo{}
+    &__items{
+        a{
+            margin: .5rem 1rem;
+            padding-bottom:8px ;
+            transition: all 200ms ease-in-out;
+            &:hover{
+                color: $ctaCyan;
+                border-bottom: 1px solid $ctaCyan;
+            }
+        }
+    }
+}
